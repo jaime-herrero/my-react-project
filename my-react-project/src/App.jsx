@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -39,6 +39,16 @@ function App() {
     setUser(userInfo)
   }
 
+  //useEffect(() => {
+  //   console.log('Componente App cargado cada vez que se renderiza')
+  //})
+
+  //useEffect(()=>{
+  //  console.log('Componente App cargado cada vez que se cambia la variable reactiva user')
+  //},[user])
+
+  const [showMovies, setShowMovies] = useState(true);
+
   const addOne = () => {
     // number ++;
     setNumber(number + 1);
@@ -62,6 +72,10 @@ function App() {
 
        <Login handleLogin={login}></Login>
 
+       <button onClick={() => setShowMovies(!showMovies)}>Toggle Movies</button>
+
+       {showMovies && <MovieList></MovieList>}
+
        {condition && <h2>La condición se cumple</h2>}
        {!condition && <h2>La condición NO se cumple</h2>} 
 
@@ -73,7 +87,6 @@ function App() {
  
        <h2 onClick={addOne}>Number: {number}</h2>
 
-       <MovieList></MovieList>
        <AnimalList></AnimalList>
        
        <br/>

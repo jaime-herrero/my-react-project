@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 function MovieList() {
     const movies = ["Project X","La vida de Brian","American Pie"];
 
@@ -5,6 +7,16 @@ function MovieList() {
         return <p key={movie}>{movie} - {index + 1}</p>
 
     })
+
+    useEffect(() => {
+      console.log("Component MoveList mounted");
+    }, [])
+
+    useEffect(() => {
+      return  () => {
+        console.log("Component MovieList unmounted");
+      }
+    },[])
 
 
   return (

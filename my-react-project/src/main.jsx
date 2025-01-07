@@ -6,7 +6,7 @@ import App from './App.jsx'
 // Vesrion 2 del main
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  //<StrictMode>
     <App />
-  </StrictMode>,
+ // </StrictMode>,
 )
