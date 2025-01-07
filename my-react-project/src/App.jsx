@@ -73,26 +73,26 @@ function App() {
 
        <Login handleLogin={login}></Login>
 
-       <button onClick={() => setShowMovies(!showMovies)}>Toggle Movies</button>
+       {/* <button onClick={() => setShowMovies(!showMovies)}>Toggle Movies</button> */}
 
-       {showMovies && <MovieList></MovieList>}
+       {/* {showMovies && <MovieList></MovieList>} */}
 
-       {condition && <h2>La condición se cumple</h2>}
-       {!condition && <h2>La condición NO se cumplee</h2>} 
+       {/* {condition && <h2>La condición se cumple</h2>} */}
+       {/* {!condition && <h2>La condición NO se cumple</h2>}  */}
 
-       {condition ? (
+       {/* {condition ? (
         <h2>La condición se cumple ternario</h2>
        ) : (
        <h2>La condición NO se cumple ternario</h2>
-       )}
+       )} */}
  
-       <h2 onClick={addOne}>Number: {number}</h2>
+       {/* <h2 onClick={addOne}>Number: {number}</h2> */}
 
-       <AnimalList></AnimalList>
+       {/* <AnimalList></AnimalList> */}
        
        <br/>
-       <input value={myValue} placeholder={myPlaceholder} type='text' onChange={handleChange}/>
-       <ButtonComponent></ButtonComponent>
+       {/* <input value={myValue} placeholder={myPlaceholder} type='text' onChange={handleChange}/>
+       <ButtonComponent></ButtonComponent> */}
       </main>
     </>
   )

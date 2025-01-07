@@ -3,11 +3,17 @@ import React from 'react'
 function Login(props) {
 
   const user = {
-    username: 'Jaime',
-    email: 'jaime@email.com'
+    username: '',
+    email: '',
   }
 
-  const handlClick = () => {
+  const SetUsername = (e) => {
+    user.username = e.target.value;
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('user')
     props.handleLogin(user);
   
   }
@@ -16,7 +22,10 @@ function Login(props) {
   return (
     <section>
         <h2>Login section</h2>
-        <button onClick={handlClick}>Login</button>
+        <form onSubmit={handleSubmit}>
+          <input type='text' id="username" onChange />
+            <button>Login</button>
+        </form>
     </section>
   )
 }
