@@ -77,7 +77,7 @@ function App() {
        {showMovies && <MovieList></MovieList>}
 
        {condition && <h2>La condición se cumple</h2>}
-       {!condition && <h2>La condición NO se cumple</h2>} 
+       {!condition && <h2>La condición NO se cumpleeee</h2>} 
 
        {condition ? (
         <h2>La condición se cumple ternario</h2>
