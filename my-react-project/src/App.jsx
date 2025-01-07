@@ -43,8 +43,9 @@ function App() {
   //   console.log('Componente App cargado cada vez que se renderiza')
   //})
 
-  //useEffect(()=>{
-  //  console.log('Componente App cargado cada vez que se cambia la variable reactiva user')
+  //CAMBIO EN NUEVA RAMA 2
+
+  //useEffect(()=>{te App cargado cada vez que se cambia la variable reactiva user')
   //},[user])
 
   const [showMovies, setShowMovies] = useState(true);
