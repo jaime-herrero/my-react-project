@@ -43,6 +43,8 @@ function App() {
   //   console.log('Componente App cargado cada vez que se renderiza')
   //})
 
+  //CAMBIO EN NUEVA RAMA
+
   //useEffect(()=>{
   //  console.log('Componente App cargado cada vez que se cambia la variable reactiva user')
   //},[user])
