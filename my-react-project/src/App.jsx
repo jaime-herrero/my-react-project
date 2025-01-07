@@ -6,6 +6,7 @@ import HeaderComponent from './Components/HeaderComponent'
 import ButtonComponent from './Components/ButtonComponent'
 import Login from './Components/login'
 import MovieList from './Components/MovieList'
+import AnimalList from './Components/AnimalList'
 
 // Version prueba subida git 4
 
@@ -73,6 +74,7 @@ function App() {
        <h2 onClick={addOne}>Number: {number}</h2>
 
        <MovieList></MovieList>
+       <AnimalList></AnimalList>
        
        <br/>
        <input value={myValue} placeholder={myPlaceholder} type='text' onChange={handleChange}/>
