@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import HeaderComponent from './Components/HeaderComponent'
-import ButtonComponent from './Components/ButtonComponent'
-import Login from './Components/login'
-import MovieList from './Components/MovieList'
-import AnimalList from './Components/AnimalList'
+// import ButtonComponent from './Components/ButtonComponent'
+// import Login from './Components/login'
+// import MovieList from './Components/MovieList'
+// import AnimalList from './Components/AnimalList'
+import MemeList from './Components/MemeList'
 
 // Version prueba subida git 4
 
@@ -14,8 +15,8 @@ function App() {
 
   // let number = 0;
   const [number, setNumber] = useState(0);
-  const [myValue, setmyValue] = useState('');
-  let myPlaceholder = 'Escribe aqui';
+  // const [myValue, setmyValue] = useState('');
+  // let myPlaceholder = 'Escribe aqui';
   
   const [greetings, setGreetings] = useState('Hello, World!');
   const links = {
@@ -69,16 +70,16 @@ function App() {
       <HeaderComponent greetingsValue={greetings} linksValue={links}></HeaderComponent>
 
       <main className='main-content'>
-       {user.username && <h2 onClick={sayHello}>Jelou {user.username}!</h2>}
+       {/* {user.username && <h2 onClick={sayHello}>Jelou {user.username}!</h2>} */}
 
-       <Login handleLogin={login}></Login>
+       {/* <Login handleLogin={login}></Login> */}
 
-       <button onClick={() => setShowMovies(!showMovies)}>Toggle Movies</button>
+       {/* <button onClick={() => setShowMovies(!showMovies)}>Toggle Movies</button> */}
 
-       {showMovies && <MovieList></MovieList>}
+       {/* {showMovies && <MovieList></MovieList>} */}
 
-       {condition && <h2>La condición se cumple</h2>}
-       {!condition && <h2>La condición NO se cumple</h2>} 
+       {/* {condition && <h2>La condición se cumple</h2>} */}
+       {/* {!condition && <h2>La condición NO se cumple</h2>}  */}
 
        {/* {condition ? (
         <h2>La condición se cumple ternario</h2>
@@ -86,12 +87,18 @@ function App() {
        <h2>La condición NO se cumple ternario</h2>
        )} */}
  
-       <h2 onClick={addOne}>Number: {number}</h2>
-       <AnimalList></AnimalList>
+       {/* <h2 onClick={addOne}>Number: {number}</h2> */}
+       {/* <AnimalList></AnimalList> */}
        
-       <br/>
+       {/* <br/> */}
        {/* <input value={myValue} placeholder={myPlaceholder} type='text' onChange={handleChange}/>
        <ButtonComponent></ButtonComponent> */}
+
+       {/* ----------------------------------------------------------- USO DE API */}
+
+        <MemeList></MemeList>
+
+
       </main>
     </>
   )
